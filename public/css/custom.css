@@ -1,1 +1,129 @@
-/* You can add custom style here */
+/* Import EB Garamond font */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* Apply to the whole site */
+body {
+    font-family: 'EB Garamond', serif !important;
+    font-size: 1.2rem;       /* Garamond needs to be slightly larger */
+    line-height: 1.2;         /* Adds breathing room between lines */
+    color: #2c3e50;           /* A soft off-black for less eye strain */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Make headers slightly bolder and more distinct */
+h1, h2, h3, h4 {
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 800;         /* Extra bold for contrast */
+    margin-top: 2rem;
+    color: #1a1a1a;
+}
+
+
+article a, 
+.post-content a, 
+.home-custom-content a,
+li a {
+    /* 1. Reset theme borders */
+    border: none !important;
+    box-shadow: none !important;
+    display: inline !important;
+
+    /* Fix the link spacing */
+    all: unset !important;
+    display: inline !important; /* Forces the link to behave like a word in a sentence */
+    white-space: normal !important;
+    cursor: pointer !important;
+    
+    /* 2. Dotted Style */
+    color: #2c3e50 !important;
+    text-decoration: underline dotted !important;
+    
+    /* 3. Precision Placement */
+    text-underline-offset: 2px !important; 
+    
+    /* 4. Thickness - 1px is usually the 'fine' setting for dots */
+    text-decoration-thickness: 1px !important; 
+    text-decoration-color: #2c3e50 !important;
+    
+    text-decoration-skip-ink: auto !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 5. Refined Hover (Thinner Solid Line) */
+article a:hover, 
+.post-content a:hover, 
+.home-custom-content a:hover,
+li a:hover {
+    color: #000 !important;
+    text-decoration-style: solid !important; 
+    text-decoration-color: #000 !important;
+    
+    /* If 1px still feels too thick, you can try 0.5px or 0.75px */
+    text-decoration-thickness: 1px !important; 
+}
+
+/* Add a bottom margin to all lists to match paragraph spacing */
+ol, ul {
+    margin-bottom: 2rem !important;
+}
+
+/* Optional: If you want to be even more precise, 
+   target a divider that comes immediately after a list */
+ol + hr, ul + hr {
+    margin-top: 2.5rem !important;
+}
+
+/* Justify text on left and right and hyphenate */
+main p, 
+article p, 
+.content p, 
+.post-content p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;
+}
+/* Increase the width of the text area to make margins smaller */
+main, 
+article, 
+.content, 
+.post,
+.terminal-body {
+    max-width: 1000px !important; /* Increase this number to make margins even narrower */
+    width: 90% !important;        /* Ensures it looks good on slightly smaller screens */
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Ensure the header and footer match the new wider width */
+header, footer {
+    max-width: 1000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+/* Scale math down to blend better with EB Garamond */
+.katex {
+    font-size: 0.9em !important; /* Slightly smaller than the surrounding text */
+}
+
+/* Adjust display (block) equations specifically if needed */
+.katex-display {
+    margin: 1.5em 0;
+    font-size: 1.0em !important; /* Block math can stay a bit larger for clarity */
+}
+
+/* Target the header, footer, and navigation explicitly */
+header,
+footer,
+nav,
+.nav-link,
+.site-title,
+.menu-item {
+    font-family: 'EB Garamond', serif !important;
+}
+
+/* If your theme uses specific class names, this catch-all often helps */
+header *, footer * {
+    font-family: 'EB Garamond', serif !important;
+}
+
