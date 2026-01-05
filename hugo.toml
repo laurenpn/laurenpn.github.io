@@ -1,6 +1,6 @@
 baseURL = 'https://laurenpn.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'laurenpn'
 theme = "shibui"
 [params]
   customCSS = ["css/custom.css"]
