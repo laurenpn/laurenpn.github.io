@@ -3,4 +3,4 @@ languageCode = 'en-us'
 title = 'laurenpn'
 theme = "shibui"
 [params]
-  customCSS = ["css/custom.css"]
+  customCSS = ["/css/custom.css"]
