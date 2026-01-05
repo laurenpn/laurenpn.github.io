@@ -1,6 +1,6 @@
 /* Apply to the whole site */
 body {
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond', serif !important;
     font-size: 1.2rem;       /* Garamond needs to be slightly larger */
     line-height: 1.2;         /* Adds breathing room between lines */
     color: #2c3e50;           /* A soft off-black for less eye strain */
@@ -9,7 +9,7 @@ body {
 
 /* Make headers slightly bolder and more distinct */
 h1, h2, h3, h4 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'EB Garamond', serif !important;
     font-weight: 800;         /* Extra bold for contrast */
     margin-top: 2rem;
     color: #1a1a1a;
